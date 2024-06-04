@@ -2,17 +2,15 @@
     namespace App\Controller;
     use Symfony\Component\HttpFoundation\Response;
     use Symfony\Component\Routing\Attribute\Route;
-    use TBETool\Downloader;
+    use App\Service\chellem_dwl;
 
-    class download
+    class dwl_video
     {
         #[Route('/yt-download/dwl', name: 'downloader')]
-        public function get_video(): Response
+        public function getVideo(chellem_dwl $dwl, string $link): Response
         {
-            
-            return new Response(
-                '<html><body>Lucky number: '.$number.'</body></html>'
-            );
+            $dwl->setLink($link);
+            $dwl->dl_video();
         }
     }
 

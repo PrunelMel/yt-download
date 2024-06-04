@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e68b32fc65f7ca06e43cf6cdfa867977",
+    "content-hash": "c4785ae5e00f1bca8c3d4bd6d7c7b170",
     "packages": [
+        {
+            "name": "chellem/youtube-downloader",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/J3-Tech/Youtube-dl-php.git",
+                "reference": "43505aa9c45d94389c98c6026a0dd5c9c6098de5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/J3-Tech/Youtube-dl-php/zipball/43505aa9c45d94389c98c6026a0dd5c9c6098de5",
+                "reference": "43505aa9c45d94389c98c6026a0dd5c9c6098de5",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/process": ">=2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Youtubedl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Chellem"
+                }
+            ],
+            "description": "PHP library to download video",
+            "keywords": [
+                "download",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/J3-Tech/Youtube-dl-php/issues",
+                "source": "https://github.com/J3-Tech/Youtube-dl-php/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://liberapay.com/j3-tech",
+                    "type": "liberapay"
+                }
+            ],
+            "time": "2015-07-01T05:06:39+00:00"
+        },
         {
             "name": "composer/semver",
             "version": "3.4.0",
@@ -7341,62 +7387,6 @@
                 }
             ],
             "time": "2024-04-28T18:29:00+00:00"
-        },
-        {
-            "name": "tbetool/php-fb-youtube-download",
-            "version": "1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TBETool/php-fb-youtube-download.git",
-                "reference": "cefd2adc9f8252667cd92dd7ae911bc10a8381bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TBETool/php-fb-youtube-download/zipball/cefd2adc9f8252667cd92dd7ae911bc10a8381bd",
-                "reference": "cefd2adc9f8252667cd92dd7ae911bc10a8381bd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TBETool\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Anuj Sharma",
-                    "email": "anuj@thebornengineer.com",
-                    "homepage": "https://anujsh.in",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Based on Youtube-dl and FFMPEG. Downloads Youtube and Facebook videos from the url.",
-            "homepage": "http://thebornengineer.com",
-            "keywords": [
-                "Anuj Sharma",
-                "Anuj TBE",
-                "PHP download from url",
-                "TBE",
-                "facebook downloader",
-                "facebook video download",
-                "php downloader",
-                "php facebook download",
-                "php facebook download video",
-                "php facebook video download",
-                "php youtube download video",
-                "php youtube video download",
-                "youtube downloader",
-                "youtube video download"
-            ],
-            "support": {
-                "issues": "https://github.com/TBETool/php-fb-youtube-download/issues",
-                "source": "https://github.com/TBETool/php-fb-youtube-download/tree/master"
-            },
-            "time": "2018-10-08T04:52:42+00:00"
         },
         {
             "name": "twig/extra-bundle",
