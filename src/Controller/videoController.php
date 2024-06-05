@@ -16,10 +16,11 @@
                 
                 echo "Video downloaded";
 
-                return $this->redirectToRoute('');
+                return $this->redirectToRoute('dwlPage');
             }
             else{
                 echo "Something went wrong. Try again";
+                return $this->redirectToRoute('errorPage');
             }
         }
     }
