@@ -4,7 +4,7 @@
     use Youtubedl\Youtubedl;
 
 
-    class chellem_dwl
+    class chellemDwl
     {
 
         private string $link;
