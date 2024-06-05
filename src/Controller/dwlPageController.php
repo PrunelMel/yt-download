@@ -7,9 +7,9 @@
 
     class dwlPageController extends AbstractController
     {
-        #[Route('/yt-download/dwlPage', name: 'dwlPage')]
-        public function renderDwlPage()
+        #[Route('/yt-download/errorPage', name: 'errorPage')]
+        public function renderErrorPage()
         {
-            return $this->render('dwlPage.html.twig');
+            return $this->render('errorPage.html.twig');
         }
     }
