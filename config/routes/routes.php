@@ -3,7 +3,9 @@
     use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
     return function (RoutingConfigurator $routes): void {
-        $routes->add('home', '/yt-download')
+
+        
+        $routes->add('home', '/')
             ->controller(TemplateController::class)
             ->methods(['GET'])
             ->defaults([
@@ -13,5 +15,7 @@
 
             ])
         ;
+
+        
     };
 ?>
