@@ -2,7 +2,7 @@
     namespace App\Service;
 
     use Youtubedl\Youtubedl;
-;
+
 
     class chellem_dwl
     {
@@ -18,8 +18,8 @@
         {
             return $this->link;
         }
-        
-        public function dl_video(): void
+
+        public function dl_video(): bool
         {
             try{
                 
@@ -30,9 +30,12 @@
                 
                 $youtubedl->download($this->link)
                         ->execute();
+                
+                return True;
             }
             catch(Exception $e){
                 echo $e->getMessage();
+                return False;
             }
         }
 

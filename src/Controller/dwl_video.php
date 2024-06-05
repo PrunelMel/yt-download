@@ -10,7 +10,14 @@
         public function getVideo(chellem_dwl $dwl, string $link): Response
         {
             $dwl->setLink($link);
-            $dwl->dl_video();
+            
+            if ($dwl->dl_video()){
+                
+                echo "Video downloaded";
+            }
+            else{
+                echo "Something went wrong. Try again";
+            }
         }
     }
 
