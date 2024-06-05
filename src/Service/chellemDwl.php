@@ -19,7 +19,7 @@
             return $this->link;
         }
 
-        public function dl_video(): bool
+        public function dwlVideo(): bool
         {
             try{
                 
