@@ -6,9 +6,9 @@
 
     class errorPageController extends AbstractController
     {
-        #[Route('/yt-download/dwlPage', name: 'dwlPage')]
-        public function renderDwlPage():Response
+        #[Route('/yt-download/errorPage', name: 'errorPage')]
+        public function renderErrorPage():Response
         {
-            return $this->render('dwlPage.html.twig');
+            return $this->render('errorPage.html.twig');
         }
     }
