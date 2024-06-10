@@ -9,7 +9,7 @@
             ->controller(TemplateController::class)
             ->methods(['GET'])
             ->defaults([
-                'template'  => 'homepage.html.twig',
+                'template'  => 'homepage.html',
                 'statusCode' => 200
 
 
