@@ -3,20 +3,21 @@
     use Symfony\Component\HttpFoundation\Response;
     use Symfony\Component\Routing\Attribute\Route;
     use Symfony\Component\HttpFoundation\RedirectResponse;
+    use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
     use App\Service\chellemDwl;
 
     class videoController
     {
         #[Route('/yt-download/dwl', name: 'downloader')]
-        public function getVideo(chellemDwl $dwl, string $link): RedirectResponse
+        public function getVideo( #[MapQueryParameter] string $url,chellemDwl $dwl): RedirectResponse
         {
-            $dwl->setLink($link);
+            $dwl->setLink($url);
             
             if ($dwl->dwlVideo()){
                 
-                echo "Video downloaded";
+                $message = "Video downloaded";
 
-                return $this->redirectToRoute('dwlPage');
+                return $this->redirectToRoute('dwlPage',array('message' => $message));
             }
             else{
                 echo "Something went wrong. Try again";
