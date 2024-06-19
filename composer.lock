@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c6fd194716ca88aaa7ac0086631ef19",
+    "content-hash": "82f43099eb4bf089d00a32327ac7752b",
     "packages": [
         {
             "name": "amphp/amp",
@@ -939,52 +939,6 @@
                 }
             ],
             "time": "2020-07-10T16:13:29+00:00"
-        },
-        {
-            "name": "chellem/youtube-downloader",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/J3-Tech/Youtube-dl-php.git",
-                "reference": "43505aa9c45d94389c98c6026a0dd5c9c6098de5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/J3-Tech/Youtube-dl-php/zipball/43505aa9c45d94389c98c6026a0dd5c9c6098de5",
-                "reference": "43505aa9c45d94389c98c6026a0dd5c9c6098de5",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/process": ">=2.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Youtubedl": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Chellem"
-                }
-            ],
-            "description": "PHP library to download video",
-            "keywords": [
-                "download",
-                "youtube"
-            ],
-            "support": {
-                "issues": "https://github.com/J3-Tech/Youtube-dl-php/issues",
-                "source": "https://github.com/J3-Tech/Youtube-dl-php/tree/v1.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://liberapay.com/j3-tech",
-                    "type": "liberapay"
-                }
-            ],
-            "time": "2015-07-01T05:06:39+00:00"
         },
         {
             "name": "composer/semver",
